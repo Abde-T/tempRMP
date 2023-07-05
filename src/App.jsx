@@ -1,8 +1,8 @@
-// import Mainpage from "./pages/Mainpage";
+import Mainpage from "./pages/Mainpage";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import HomePage from "./pages/HomePage";
+// import HomePage from "./pages/HomePage";
 
 
 function App() {
@@ -11,8 +11,8 @@ function App() {
   return (
     <Router>
       <Routes>
-        {/* <Route path="/" element={<Mainpage />} /> */}
-        <Route path="/" element={<HomePage />} />
+        <Route path="/" element={<Mainpage />} />
+        {/* <Route path="/home" element={<HomePage />} /> */}
       </Routes>
     </Router>
   );
