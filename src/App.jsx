@@ -1,4 +1,4 @@
-import Mainpage from "./pages/Mainpage";
+// import Mainpage from "./pages/Mainpage";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -11,8 +11,8 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Mainpage />} />
-        <Route path="/home" element={<HomePage />} />
+        {/* <Route path="/" element={<Mainpage />} /> */}
+        <Route path="/" element={<HomePage />} />
       </Routes>
     </Router>
   );
