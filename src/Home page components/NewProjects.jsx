@@ -1,7 +1,6 @@
 import React from 'react';
 
 const NewProjects = () => {
-        const array1 = [1, 2, 3, 4];
   return (
     <>
       <div className="cardContainer">
@@ -10,8 +9,8 @@ const NewProjects = () => {
           <p>see more</p>
         </div>
         <div className="cards">
-          {array1.fill(
-            <div className="card_" >
+          {new Array(4).fill(0).map((_, index) =>
+            <div className="card_" key={index}>
               <div className="card-1"></div>
               <div className="right">
                 <div className="card-2"></div>

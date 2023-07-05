@@ -1,13 +1,8 @@
 import React from "react";
 import Slider from "react-slick";
-import {useSelector} from 'react-redux'
 
 const Featured = () => {
-  const posts = useSelector((state)=>{state.posts})
-  console.log(posts)
 
-
-  const array1 = [1,1,1,1];
   const settings = {
     dots: false,
     autoplay: true,
@@ -58,8 +53,8 @@ const Featured = () => {
 
         <div className="cards">
         {/* <Slider {...settings} key={Date.now()} className="flex "> */}
-          {array1.fill(
-            <div className="card_" >
+          {new Array(4).fill(0).map((_, index) =>
+            <div className="card_"  key={index}>
               <div className="card-1"></div>
               <div className="right">
                 <div className="card-2"></div>

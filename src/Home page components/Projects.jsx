@@ -1,12 +1,11 @@
 import React from "react";
 
 const Projects = () => {
-  const array1 = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1];
   return (
     <>
       <div className="cards-">
-        {array1.fill(
-          <div className="card_" >
+        {new Array(4).fill(0).map((_, index) =>
+          <div className="card_" key={index}>
             <div className="card-1"></div>
             <div className="right">
               <div className="card-2"></div>
